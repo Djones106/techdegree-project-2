@@ -1,0 +1,169 @@
+/* Global Layout Set-up */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    color:black;
+    background:#e1e8ec;
+    line-height: 1.5;
+}
+
+ul,
+li{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+
+h1{
+    text-align: right;
+}
+
+img{
+    max-width: 50%;
+}
+
+/* Section Styles */
+.name,
+.nav{
+    display:flex;
+    flex-direction: row;
+}
+#main-nav{
+    width: 100%;
+    min-height: 30px;
+    padding: 16px;
+    text-align: right;
+    margin: none;
+    text-transform: uppercase;
+}
+
+.nav{
+    margin-top: 1.5em;
+    text-transform: uppercase
+    justify-content:space-between;
+}
+
+.name{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 2em;
+    margin: auto;
+    color: black;
+    text-transform: capitalize;
+    align-self: left;
+}
+
+.nav a {
+    padding: 10px 15px;
+    color: #4c5175;
+    font-size: 1.125em;
+    font-weight: 300;
+    text-align: center;
+    padding: .4em;
+    border-bottom: 1px solid #bce7d9
+}
+
+.nav a:hover{
+    color: black;
+    border-bottom-color: cadetblue;
+}
+.profile-img{
+    width: 300px;
+    display:flex;
+    flex-direction: row;
+    justify-self: flex-end;
+}
+
+.portfolio{
+    background: #f8f8f8;
+    padding: 20px;
+    flex-basis: 90%;  
+    margin:auto;
+}
+.project{
+    flex-basis: 30%;
+}
+
+footer{
+    background: #f8f8f8;
+    margin-top: auto;
+}
+ /*
+
+@media (min-width: 360px){
+    #main-nav,
+    .nav ,
+    .name,{
+    display:flex;
+    font-weight: 700;
+    list-style-type: none;
+    margin-left: auto;
+    padding: 0;
+    flex-direction: column;
+    }
+
+    
+}
+@media (min-width: 768px) {
+    .name{
+        justify-content: flex-start;
+    }
+    .nav,
+    {
+        height: 200px;
+        margin-top:3em;
+        flex-direction:column;
+        justify-content:flex-end;
+    }
+    .nav a{
+        border-bottom-color: transparent;
+    }
+    .portfolio,
+    .projects{
+        flex-direction: column;
+        align-items:center;
+        margin: 0 auto;
+    }
+    
+}
+
+@media (min-width: 1024px){
+    .name
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .nav,
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+,
+    .project
+    {
+        display:flex;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items:center;
+    }
+    .portfolio{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around
+        flex-direction: row;
+        width: 1080px;
+
+    }
+}
+*/
