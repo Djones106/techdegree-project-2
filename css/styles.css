@@ -1,102 +1,102 @@
 /* Global Layout Set-up */
 *{
     box-sizing: border-box;
+    padding: 0:
+    margin: 0;
 }
 
 body{
-    margin: 0;
-    padding: 0;
+
     font-family: 'Oswald', sans-serif;
-    font-weight: 300;
-    color:black;
+    color: black;
     background:#e1e8ec;
-    line-height: 1.5;
     
 }
-
-ul,
-li{
-    margin:0;
-    padding:0;
+h1,h2,h3 {
+    font-family:'Otomanopee One', sans-serif;
+    color:darkslateblue;
+}
+ul {
     list-style-type: none;
 }
 
 
+a:link {
+    text-decoration: none;
+}
+
+a:hover{
+    color: #4c5175;
+}
+
 img{
-    width: 100%;
-    margin: 10px;
+    width: 50%;
+}
+.menu li{
+    font-family: 'Otomanopee One', sans-serif;
+    text-transform: uppercase;
+    
+}
+
+.name a{
+        font-size: 1.5em;
+        text-transform: capitalize;
+      }
+.item-footer{
+    display:none;
+}
+
+footer li{
+    font-family: 'Otomanopee One', sans-serif;
+    text-transform: uppercase;
 }
 
 /* Section Styles */
-/*.name,
-.nav{
+.menu{
     display:flex;
-    flex-direction: row;
-}
-*/
-.main-nav{
-    display:flex;
-    flex-direction:row;
-    flex-wrap: nowrap;
-    width: 100%;
-    min-height: 30px;
-    padding: 16px;
-    margin: none;
+    flex-direction: column;
+    text-align: center;
 }
 
-.nav{
-    margin:auto;
-    text-transform: uppercase;
-    text-decoration-line: none;
-    text-align: right;
-    
-}
-
-.name{
-    margin: 0;
-    color: black;
-    text-align:left;
-}
-
-.nav a {
-    padding: 10px 15px;
-    color: #4c5175;
-    font-size: 1.125em;
-    font-weight: 300;
-    padding: .4em;
-    border-bottom: 1px solid #bce7d9
-}
-
-.nav a:hover{
-    color: black;
-    border-bottom-color: cadetblue;
+.item{
+    background-color: #f8f8f8;
+    display:block;
+    padding: 5px;
 }
 .main-header{
-    display:flex;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
 }
 
 .bio {
-    text-align: center;
-    padding: 10px;
-    margin: 15px;
-
+    font-size: 1.25em;
 }
 .profile-img{
-    width: 300px;
-    right: 150px;
-    
+    width: 100%;
+    align-content: center;
+}
+
+.title{
+    background: #f8f8f8;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 0;
+
+
 }
 
 #portfolio{
     display:flex;
-    flex: wrap;
+    flex-wrap: wrap;
     background: #f8f8f8;
-    padding: 10px;
-    flex-basis: 50%;  
-    margin:20px;
-}
+    
+  }
 .project{
-    flex-basis: 50%;
+    flex-basis: 100%;
+    text-align: center;
 }
 
 #contact{
@@ -104,74 +104,68 @@ img{
 }
 footer{
     background: #f8f8f8;
+    display:block;
 }
- /*
+.back-to-top{
+    margin-right: 0;
+}
+ 
 
-@media (min-width: 360px){
-    .main-nav{
-     flex-direction: column;
+@media (min-width: 768px){
+    .menu {
+     flex-direction: row;
+     text-align:left;
+     justify-content: space-around;
+    }
+    .name{
+        flex-wrap: nowrap;
+    }
+    .item {
+        background-color:#e1e8ec;
     }
     .main-header{
-        flex-direction: column;
+        flex-direction: row-reverse;
+        text-align: center;
     }
-    .portfolio{
-        flex-direction: column;
+    .profile-img{
+        width: 50%;
+    }
+    .project{
         justify-content: space-between;
+        flex-basis: 50%;
+        text-align: center;
+    }
+    #portfolio{
+        margin-right: .25em;
+    }
+    .profile-img{
+        align-self: center;
     }
 
-    
-}
-@media (min-width: 768px) {
-    .main-nav{
-        justify-content: flex-start;
-        justify-content:space-between;
+@media (max-width: 1024px){
+    .menu{
+        flex:block;
+
+    }
+    #portfolio{
+        padding: 10px;
+        
+        margin-bottom:0 20px;
+        justify-content: space-around;
     }
 
-    .main-header{
-        height: 200px;
-        margin-top:3em;
-        flex-direction:column;
-        justify-content:flex-end;
-    }
-    .nav a{
-        border-bottom-color: transparent;
-    }
-    .portfolio,{
-        flex-direction: row;
-        margin: 0 auto;
-    }
-    
-}
-
-@media (min-width: 1024px){
-    .name
-    {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-    }
-    .nav,
-    {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-,
-    .project
-    {
-        display:flex;
-        flex-direction: row;
-        justify-content:space-around;
-        align-items:center;
-    }
-    .portfolio{
-        display: flex;
+    .project{
         flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-around
-        flex-direction: row;
-        width: 1080px;
+        justify-content: space-between;
+        flex-basis: 25%; 
 
     }
+    .item-footer{
+        display:contents;
+    }
+    .back-to-top{
+        display: none;
+    }
+    
 }
-*/
+
