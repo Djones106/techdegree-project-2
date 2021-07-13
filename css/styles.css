@@ -57,6 +57,9 @@ footer li{
     flex-direction: column;
     text-align: center;
 }
+.name{
+    text-align: center;
+}
 
 .item{
     background-color: #f8f8f8;
@@ -99,27 +102,31 @@ footer li{
 #contact{
     text-align: center;
 }
-#footer{
+.footer-nav{
     background: #f8f8f8;
-    display:flex;
-    flex-direction: column;
+    text-align: center;
+    margin-top: auto;
 }
-.back-to-top{
-    margin-right: 0;
+.name-footer, .back-to-top{
+    background-color: #f8f8f8;
+    text-align: center;
+    margin-bottom: 0;
 }
+
  
 
 @media (min-width: 768px){
     .menu {
      flex-direction: row;
+     justify-content: center;
+     text-align: center;
     }
 
     .name{
-        text-align: left;
+        text-align: center;
     }
 
     .item{
-        align-items: flex-end;
         background-color:#e1e8ec;
     }
     
@@ -142,14 +149,15 @@ footer li{
     .profile-img{
         align-self: center;
     }
-    #footer{
+    .footer-nav{
         flex-direction: row;
+        justify-content: right;
     }
-
-    .item-footer{
-        margin-right: auto;
+    .name-footer{
+        text-align: left;
     }
-    .item-footer{
+    
+    .footer-nav{
         display:contents;
     }
     .back-to-top{
@@ -158,10 +166,17 @@ footer li{
 }
 @media (min-width: 1024px){
     .menu{
-        flex-direction: row;
+        justify-content: right;
+        margin-top: 0;
+    }
+    .name {
+        text-align: left;
+    }
+    .name-footer {
+        text-align: left;
     }
     .profile-img{
-        width: 50%;
+        width: 25%;
     }
     .bio{
         text-align: center;
@@ -175,9 +190,7 @@ footer li{
         flex-basis: 30%; 
 
     }
-    #footer{
-        flex-direction: row;
-    }
+  
     
     
 }
