@@ -56,6 +56,8 @@ footer li{
     flex-wrap: wrap;
     flex-direction: column;
     text-align: center;
+    padding: 10px 0;
+    margin: 5px auto;
 }
 .name{
     text-align: center;
@@ -63,7 +65,7 @@ footer li{
 
 .item{
     background-color: #f8f8f8;
-    padding: 5px;
+    padding: 10px;
 }
 .main-header{
     display: flex;
@@ -103,15 +105,23 @@ footer li{
     text-align: center;
 }
 .footer-nav{
+    display:flex;
+    flex-wrap: wrap;
     background: #f8f8f8;
-    text-align: center;
     margin-top: auto;
-}
-.name-footer, .back-to-top{
-    background-color: #f8f8f8;
     text-align: center;
-    margin-bottom: 0;
+    justify-content: space-evenly;
 }
+
+.name-footer{
+    margin-bottom: auto;
+    background: #f8f8f8;
+    margin-bottom: 0;
+    text-align: center;
+}
+.item-footer{
+    display: none;
+} 
 
  
 
@@ -127,7 +137,7 @@ footer li{
     }
 
     .item{
-        background-color:#e1e8ec;
+        background-color: transparent;
     }
     
     .main-header{
@@ -150,24 +160,23 @@ footer li{
         align-self: center;
     }
     .footer-nav{
-        flex-direction: row;
-        justify-content: right;
-    }
+        justify-content: center;
+    }  
     .name-footer{
         text-align: left;
+        margin-bottom: auto;
     }
-    
-    .footer-nav{
-        display:contents;
+    .item-footer{
+        display: contents;
     }
+     
     .back-to-top{
         display: none;
     }
 }
 @media (min-width: 1024px){
-    .menu{
-        justify-content: right;
-        margin-top: 0;
+    .menu {
+        justify-content: flex-end;
     }
     .name {
         text-align: left;
@@ -181,6 +190,7 @@ footer li{
     .bio{
         text-align: center;
         align-self: center;
+        margin-left: 10px;
     }
     #portfolio{
         justify-content: space-around;
@@ -190,6 +200,7 @@ footer li{
         flex-basis: 30%; 
 
     }
+
   
     
     
