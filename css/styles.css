@@ -37,7 +37,6 @@ img{
 }
 
 .name a{
-        font-size: 1.5em;
         text-transform: capitalize;
       }
 .item-footer{
@@ -60,7 +59,9 @@ footer li{
     margin: 5px auto;
 }
 .name{
+    font-size: 50px;
     text-align: center;
+    margin-bottom: 0;
 }
 
 .item{
@@ -160,7 +161,7 @@ footer li{
         align-self: center;
     }
     .footer-nav{
-        justify-content: center;
+        justify-content: flex-end;
     }  
     .name-footer{
         text-align: left;
@@ -169,7 +170,10 @@ footer li{
     .item-footer{
         display: contents;
     }
-     
+     .item-footer a {
+         display: inline-block;
+         padding: 0 10px;
+     }
     .back-to-top{
         display: none;
     }
