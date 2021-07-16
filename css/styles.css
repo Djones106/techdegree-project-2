@@ -105,6 +105,24 @@ footer li{
 #contact{
     text-align: center;
 }
+#footer{
+    display:flex;
+    justify-content: space-between;
+    background: #f8f8f8;
+    padding: 10px;
+    height: 100px;
+}
+
+.name-footer{
+    font-size: 18px;
+}
+
+.name-footer,
+.footer-nav{
+    padding:0px;
+    margin: auto;
+}
+/*
 .footer-nav{
     display:flex;
     flex-wrap: wrap;
@@ -120,6 +138,7 @@ footer li{
     margin-bottom: 0;
     text-align: center;
 }
+*/
 .item-footer{
     display: none;
 } 
@@ -160,40 +179,31 @@ footer li{
     .profile-img{
         align-self: center;
     }
-    .footer-nav{
-        justify-content: flex-end;
-    }  
-    .name-footer{
-        text-align: left;
-        margin-bottom: auto;
+    .item-footer a {
+         padding: 0 10px;
     }
+    .name-footer{
+        font-size: 36px;
+    }
+
     .item-footer{
         display: contents;
     }
-     .item-footer a {
-         display: inline-block;
-         padding: 0 10px;
-     }
+   
     .back-to-top{
         display: none;
     }
 }
 @media (min-width: 1024px){
-    .main-nav h1{
-        display: inline-block;
-    }
-    .main-nav ul {
+    .main-nav{
         display: flex;
+        justify-content: space-between;
     }
-    .menu {
-        justify-content: flex-end;
-    }
-    .name {
-        text-align: left;
-    }
-    .name-footer {
-        text-align: left;
-    }
+   .main-nav h1, 
+   .menu{
+       margin: auto 0;
+   } 
+   
     .profile-img{
         width: 25%;
     }
@@ -211,7 +221,15 @@ footer li{
 
     }
 
-   
+   #footer{
+    display: flex;
+    justify-content: space-between;
+   }
+
+   #footer h1,
+   .footer-nav{
+       margin: auto 0;
+   }
   
     
     
