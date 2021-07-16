@@ -179,6 +179,12 @@ footer li{
     }
 }
 @media (min-width: 1024px){
+    .main-nav h1{
+        display: inline-block;
+    }
+    .main-nav ul {
+        display: flex;
+    }
     .menu {
         justify-content: flex-end;
     }
@@ -205,6 +211,7 @@ footer li{
 
     }
 
+   
   
     
     
